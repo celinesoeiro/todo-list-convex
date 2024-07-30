@@ -13,12 +13,10 @@ export default function Home() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    console.log("submit", e);
     void addTodo({ value: text });
   };
 
   const handleMark = (id: string) => {
-    console.log("mark", id);
     void markTodo({ id: id });
   };
 
